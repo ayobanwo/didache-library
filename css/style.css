@@ -1,3 +1,7 @@
+@font-face {
+    font-family: BankGothic;
+    src: url(../fonts/BankGothicMediumBT.ttf);
+}
 .topnav-div{
     display: flex;
     padding: 40px 5%;
@@ -11,6 +15,7 @@
     font-weight: 700;
     margin-left: 10px;
     letter-spacing: 4px;
+    font-family: BankGothic;
 }
 .searchbar-div{
     margin-left: 10%;
@@ -32,7 +37,11 @@
     padding: 17px 20px;
 }
 .contact{
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    font-weight: 700;
+    float: right;
+    margin: auto;
+    margin-right: 0;
 }
 .logo-mob{
     width: 40px;
@@ -58,7 +67,140 @@
     background: linear-gradient(353.9deg, #EDEDED 49.83%, #F8F8F8 71.38%);
     border: 1px solid #BABABA;
 }
+.header-nav-link{
+    font-family: 'Gilmer Medium';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin: 0 20px;
+}
 #navbarsExample05{
-    display: flex;
-    padding: 5px auto;
+    justify-content: center;
 } 
+.belownav{
+    background: linear-gradient(180deg, #24CA6A 29.76%, #42E1A8 72.87%);
+    height: 30px;
+}
+header{
+    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)),
+        url(../images/header-bg.png);
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+header h1{
+    color: white;
+    font-weight: 300;
+}
+section{
+    padding: 20px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.releases{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+.release-div{
+    background: #F5F5F5;
+    border: 1px solid #AEAEAE;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.releasetop{
+    background: #2F2F48;
+    height: 90px;
+    width: 120px;
+    color: #F2DFAD;
+    font-size: 20px;
+    padding: 10px;
+}
+.release-bottom{
+    background: #4A4A53;
+    height: 50px;
+    width: 120px;
+    color: #FBFBFB;
+    padding: 10px;
+    font-size: 10px;
+}
+.release-desc{
+    padding: 15px;
+    width: 150px;
+    font-family: 'Montserrat';
+}
+.release-desc span{
+    margin-bottom: 20px;
+}
+.downloadbtn{
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(49.55deg, #00CC56 13.9%, #69E8F3 90.92%);
+    padding: 8px;
+    border: none;
+}
+.scetion-hr {
+    width: 100%;
+    margin-bottom: 30px;
+    border: 1px solid #AEAEAE;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 49px;
+    margin: 0;
+}
+.content p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 168.4%;
+    width: 800px;
+    
+}
+@media (max-width:1080px) {
+    .contact{
+        display: none;
+    }
+}
+@media (max-width:1000px) {
+  
+    .header-nav-link{
+        font-size: 15px;
+        margin: 0 8px;
+    }
+    
+}
+@media (max-width:767px) {
+    .contact {
+        display: none;
+    }
+    .mob-hide, .logo{
+        display: none;
+    }
+    .desk-hide {
+        display: block;
+    }
+    .searchbar-div input{
+        width: 500px;
+    }
+}
