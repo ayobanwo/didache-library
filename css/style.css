@@ -2,6 +2,10 @@
     font-family: BankGothic;
     src: url(../fonts/BankGothicMediumBT.ttf);
 }
+@font-face {
+    font-family: Gilmer;
+    src: url(../fonts/gilmer-light.otf);
+}
 .topnav-div{
     display: flex;
     padding: 40px 5%;
@@ -68,7 +72,7 @@
     border: 1px solid #BABABA;
 }
 .header-nav-link{
-    font-family: 'Gilmer Medium';
+    font-family: Gilmer;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -96,6 +100,11 @@ header{
 header h1{
     color: white;
     font-weight: 300;
+    font-family: Gilmer;
+    font-size: 60px;
+}
+.bold{
+    font-weight: 800;
 }
 section{
     padding: 20px 10%;
@@ -117,6 +126,7 @@ section{
     background: #F5F5F5;
     border: 1px solid #AEAEAE;
     padding: 20px;
+    margin: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -161,9 +171,8 @@ section{
     text-align: center;
 }
 .content h1{
-    font-family: 'Product Sans';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 600;
     font-size: 40px;
     line-height: 49px;
     margin: 0;
@@ -182,11 +191,14 @@ section{
         display: none;
     }
 }
-@media (max-width:1000px) {
+@media (max-width:1070px) {
   
     .header-nav-link{
         font-size: 15px;
-        margin: 0 8px;
+        margin: 0 4px;
+    }
+    .content p{
+        width: 100%;
     }
     
 }
@@ -200,7 +212,35 @@ section{
     .desk-hide {
         display: block;
     }
-    .searchbar-div input{
-        width: 500px;
+    #navbar{
+        position: absolute !important;
+        top: auto;
+        width: 100%;
+        background: #fffffff9;
+    }
+    .navbar-nav{
+        margin: 20px;
+    }
+    .header-nav-link{
+        color: black !important;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #00000014;
+    }
+    .caret{
+        margin: auto;
+    }
+}
+@media (max-width: 650px) {
+    .searchbar-div input {
+        width: 300px;
+    }
+}
+@media (max-width: 550px) {
+    .searchbar-div input {
+        width: 180px;
+    }
+    .logo-text-mob{
+        display: none;
     }
 }
