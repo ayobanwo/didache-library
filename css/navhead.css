@@ -1,0 +1,195 @@
+@font-face {
+    font-family: BankGothic;
+    src: url(../fonts/BankGothicMediumBT.ttf);
+}
+
+@font-face {
+    font-family: Gilmer;
+    src: url(../fonts/gilmer-light.otf);
+}
+
+.topnav-div {
+    display: flex;
+    padding: 40px 5%;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+}
+
+.logo-text {
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 4px;
+    font-family: BankGothic;
+}
+
+.searchbar-div {
+    margin-left: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.searchbar-div input {
+    padding: 15px;
+    width: 400px;
+    font-size: 14px;
+    background: linear-gradient(180deg, #D9D9D9 -149.07%, rgba(217, 217, 217, 0) 40.74%);
+    border: 1px solid #BCBCBC;
+    border-radius: 2px;
+}
+
+.searchbar-div i {
+    background: linear-gradient(360deg, #EFEFEF 0%, #B5B5B5 100%);
+    border: 1px solid #BCBCBC;
+    border-radius: 2px;
+    padding: 17px 20px;
+}
+
+.contact {
+    /* margin-left: 10%; */
+    font-weight: 700;
+    float: right;
+    margin: auto;
+    margin-right: 0;
+}
+
+.logo-mob {
+    width: 40px;
+    height: auto;
+    object-fit: contain;
+}
+
+.logo-text-mob {
+    font-weight: 700;
+    margin-left: 10px;
+    letter-spacing: 4px;
+}
+
+.logo-a {
+    color: black;
+}
+
+.logo-a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.desk-hide {
+    display: none;
+}
+
+#navbar {
+    background: linear-gradient(353.9deg, #EDEDED 49.83%, #F8F8F8 71.38%);
+    border: 1px solid #BABABA;
+}
+
+.header-nav-link {
+    font-family: Gilmer;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333333;
+    margin: 0 20px;
+}
+
+#navbarsExample05 {
+    justify-content: center;
+}
+
+.belownav {
+    background: linear-gradient(180deg, #24CA6A 29.76%, #42E1A8 72.87%);
+    height: 30px;
+}
+
+header {
+    background-image: linear-gradient(rgba(23, 23, 23, 0.7), rgba(23, 23, 23, 0.7)),
+        url(../images/header-bg.png);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+header h1 {
+    color: white;
+    font-weight: 300;
+    font-family: Gilmer;
+    font-size: 60px;
+}
+
+.bold {
+    font-weight: 800;
+}
+@media (max-width:1080px) {
+    .contact {
+        display: none;
+    }
+}
+
+@media (max-width:1070px) {
+
+    .header-nav-link {
+        font-size: 15px;
+        margin: 0 4px;
+    }
+
+}
+
+@media (max-width:767px) {
+    .contact {
+        display: none;
+    }
+
+    .mob-hide,
+    .logo {
+        display: none;
+    }
+
+    .desk-hide {
+        display: block;
+    }
+
+    #navbar {
+        position: absolute !important;
+        top: auto;
+        width: 100%;
+        background: #fffffff9;
+    }
+
+    .navbar-nav {
+        margin: 20px;
+    }
+
+    .header-nav-link {
+        color: black !important;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #00000014;
+    }
+
+    .caret {
+        margin: auto;
+    }
+}
+
+@media (max-width: 650px) {
+    .searchbar-div input {
+        width: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    .searchbar-div input {
+        width: 180px;
+    }
+
+    .logo-text-mob {
+        display: none;
+    }
+}
