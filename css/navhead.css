@@ -8,6 +8,10 @@
     src: url(../fonts/gilmer-light.otf);
 }
 
+.dropdown{
+    display: flex;
+    align-items: center;
+}
 .topnav-div {
     display: flex;
     padding: 40px 5%;
@@ -126,6 +130,23 @@ header h1 {
 .bold {
     font-weight: 800;
 }
+.downloadbtn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(49.55deg, #00CC56 13.9%, #69E8F3 90.92%);
+    padding: 5px 15px;
+    border: none;
+    font-weight: 600;
+    font-size: 10px;
+}
+.dwnld-a:hover{
+    text-decoration: none !important;
+}
+.dwnld-a img{
+    margin-left: 10px;
+}
 @media (max-width:1080px) {
     .contact {
         display: none;
@@ -142,6 +163,9 @@ header h1 {
 }
 
 @media (max-width:767px) {
+    .dropdown{
+        display: block;
+    }
     .contact {
         display: none;
     }

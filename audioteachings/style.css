@@ -6,7 +6,15 @@ section{
     background: url(../images/reco_book-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 80vh;
+    max-height: 80vh;
+    padding: 30px;
+}
+.reco_books h1{
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
 }
 .teachings_div{
     padding: 3%;
@@ -37,5 +45,46 @@ section{
 .sort_div option{
     font-size: 13px;
     color: #777777;
-        
+}
+.aud_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.audteach_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #FBFBFB;
+    border: 1px solid #EFEFEF;
+    padding: 20px;
+    margin-top: 30px;
+}
+.audteach_textdiv{
+    padding: 5px;
+}
+.audteach_textdiv div{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.audteach_textdiv h1{
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #4ECC83;
+}
+.audteach_textdiv p{
+    font-size: 12px;
+    color: #414141;
+    font-family: 'Product Sans', sans-serif;
+    margin-top: 10px;
+    max-width: 405px;
+    margin-right: 15px;
+}
+.readmore{
+    font-style: italic;
+    color: #4ECC83 !important;
+    cursor: pointer;
 }
