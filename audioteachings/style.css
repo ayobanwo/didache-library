@@ -88,3 +88,16 @@ section{
     color: #4ECC83 !important;
     cursor: pointer;
 }
+@media (max-width:992px) {
+    .teachings_div{
+        order: 1;
+    }
+    .reco_books{
+        order: 2;
+    }
+}
+@media (max-width:550px) {
+    .audteach_div{
+        display: block;
+    }
+}
